@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download File</title>
+</head>
+<body>
+
+<!-- Button to trigger download -->
+<button onclick="downloadFile()">Download File</button>
+
+<!-- JavaScript to handle download -->
+<script>
+function downloadFile() {
+    // URL of the file to be downloaded
+    var fileUrl = 'path/to/your/file.pdf'; // Update this with the actual file URL
+
+    // Create a temporary anchor element
+    var a = document.createElement('a');
+    a.href = fileUrl;
+
+    // Set the download attribute to specify the filename
+    a.download = 'filename.pdf'; // Update this with the desired filename
+
+    // Append the anchor element to the body
+    document.body.appendChild(a);
+
+    // Trigger the click event to initiate download
+    a.click();
+
+    // Remove the anchor element from the body
+    document.body.removeChild(a);
+}
+</script>
+
+</body>
+</html>
