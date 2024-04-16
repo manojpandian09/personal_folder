@@ -11,7 +11,8 @@
 <hr>
 
 <!-- Button to trigger download -->
-<button onclick="downloadFile()">Download File</button>
+<button onclick="downloadFile()">Download File as PDF</button>
+<button onclick="downloadFile()">Download File as Word</button>
 
 <!-- JavaScript to handle download -->
 <script>
@@ -25,6 +26,27 @@ function downloadFile() {
 
     // Set the download attribute to specify the filename
     a.download = 'Manojkumar_Resume.pdf'; // Update this with the desired filename
+
+    // Append the anchor element to the body
+    document.body.appendChild(a);
+
+    // Trigger the click event to initiate download
+    a.click();
+
+    // Remove the anchor element from the body
+    document.body.removeChild(a);
+}
+
+function downloadFile() {
+    // URL of the file to be downloaded
+    var fileUrl = 'ManojKumarP_Resume.docx'; // Update this with the actual file URL
+
+    // Create a temporary anchor element
+    var a = document.createElement('a');
+    a.href = fileUrl;
+
+    // Set the download attribute to specify the filename
+    a.download = 'Manojkumar_Resume.docx'; // Update this with the desired filename
 
     // Append the anchor element to the body
     document.body.appendChild(a);
