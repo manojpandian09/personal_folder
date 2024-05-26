@@ -11,43 +11,40 @@
 <hr>
 
 <!-- Button to trigger download -->
-<button onclick="downloadFile()">Download File as PDF</button>
-<button onclick="downloadFile()">Download File as Word</button>
+<h6>Resume Download :</h6>
+<button onclick="downloadFile('pdf')">Download File as PDF</button>
+<button onclick="downloadFile('word')">Download File as Word</button>
+<h6>CV Download:</h6>
+<button onclick="downloadFile('cv')">Download CV </button>
 
 <!-- JavaScript to handle download -->
 <script>
-function downloadFile() {
-    // URL of the file to be downloaded
-    var fileUrl = 'ManojKumarP_Resume.pdf'; // Update this with the actual file URL
-
-    // Create a temporary anchor element
+function downloadFile(ty) {
+	// Create a temporary anchor element
     var a = document.createElement('a');
-    a.href = fileUrl;
-
+if (ty=='word') {
+// URL of the file to be downloaded
+    var fileUrl = 'ManojKumarP_Resume.docx'; // Update this with the actual file URL
+	// Set the download attribute to specify the filename
+    a.download = 'Manojkumar_Resume.docx'; // Update this with the desired filename
+}
+else if (ty=='pdf'){
+	// URL of the file to be downloaded
+    var fileUrl = 'ManojKumarP_Resume.pdf'; // Update this with the actual file URL
+	
     // Set the download attribute to specify the filename
     a.download = 'Manojkumar_Resume.pdf'; // Update this with the desired filename
-
-    // Append the anchor element to the body
-    document.body.appendChild(a);
-
-    // Trigger the click event to initiate download
-    a.click();
-
-    // Remove the anchor element from the body
-    document.body.removeChild(a);
 }
-
-function downloadFile() {
-    // URL of the file to be downloaded
-    var fileUrl = 'ManojKumarP_Resume.docx'; // Update this with the actual file URL
-
-    // Create a temporary anchor element
-    var a = document.createElement('a');
-    a.href = fileUrl;
-
+else  if (ty=='cv'){
+	// URL of the file to be downloaded
+    var fileUrl = 'ManojKumarP_cv.pdf'; // Update this with the actual file URL
+	
     // Set the download attribute to specify the filename
-    a.download = 'Manojkumar_Resume.docx'; // Update this with the desired filename
+    a.download = 'ManojKumarP_cv.pdf'; // Update this with the desired filename
 
+}
+    
+	a.href = fileUrl;
     // Append the anchor element to the body
     document.body.appendChild(a);
 
