@@ -1,24 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+<title>Manoj-DataProfessional</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Download File</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+
+.notice{
+    display : none;
+}
+
+.socialicon {
+  display : none;
+}
+
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: white;}
+
+.w3-button {color: #8bc34a!important;background-color: white!important;}
+.w3-button-border {border: 1px solid #8bc34a!important}
+
+.w3-button:hover {color: black!important;background-color: #8bc34a!important;}
+.w3-nav-buton-bg {background-color: #f1f1f1!important;}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+
+
+.collapsible {
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+  color : white;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+</style>
+<link rel="stylesheet" href="static/mediastylesheet1.css">
 </head>
-<body>
 
-<h1> Manoj Kumar P </h1>
-<hr>
+<body class="w3-white">
 
-<!-- Button to trigger download -->
-<h6>Resume Download :</h6>
-<button onclick="downloadFile('pdf')">Download File as PDF</button>
-<button onclick="downloadFile('word')">Download File as Word</button>
-<h6>CV Download:</h6>
-<button onclick="downloadFile('cv')">Download CV </button>
 
-<!-- JavaScript to handle download -->
+
+
+<!-- Page Content -->
+
+  
+  <header class="w3-container w3-padding-32 w3-center w3-white w3-text-light-green" id="home" style="background-color:#f1f1f1!important;">
+    <h1 class="w3-jumbo"><span class="w3-hide-small "><strong>I'm</span> Manoj</strong></h1>
+    <p class="w3-text-dark-grey"><strong>Data Professional.</strong></p>
+    <!--img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"-->
+  </header>
+ <div class="w3-padding-large" style="margin-left:10%;margin-right:10%;" id="main">
+ 
+    <h2 class="w3-text-light-green">About Me</h2>
+    <hr style="width:200px;border-top:1px solid #f1f1f1;" class="w3-opacity">
+    <p style="text-align: justify;">Enthusiastic Data Professional with nearly 3 years of experience excelling in crafting SQL queries, developing ETL pipelines, and conducting 
+detailed data analysis using visual representations. Proven success in delivering tasks efficiently and collaborating effectively within lean 
+teams. Committed to staying current with emerging technologies for providing sustainable solutions. Passionate about contributing to 
+the growth of data science and driving insightful solutions for success. Proficient in handling time effectively and taking charge of 
+leadership responsibilities, I excel in organizing tasks efficiently and guiding teams towards successful outcomes.
+      <br>
+	  <br>
+      <i><small>One of my famous quote I heard during initial stage of my career.</small></i><br>
+      <strong>"Right Data at Right Time to Right Person"</strong> - will bring us success.
+    </p>
+	
+
+	
+
+    <h3 class="w3-padding-16 w3-text-light-green">My Skills</h3>
+    <button type="button" class="collapsible"><i class="fa fa-cogs w3-text-light-green"></i> ETL / Data Integration <i class="fa fa-plus" style="font-size: 10px;"></i></button>
+		<div class="content"><br>
+		  <p>Spark Batch/ Stream Processing</p>
+		  <p>Informatica</p>
+		  <p>SAP-Data Service</p>
+		  <p>AWS Glue</p>
+		</div>
+	<br>
+	<br>
+	
+	<button type="button" class="collapsible"><i class="fa fa-code w3-text-light-green"></i> Programming/Scripting <i class="fa fa-plus" style="font-size: 10px;"></i></button>
+		<div class="content"><br>
+		  <p>SQL</p>
+		  <p>Python</p>
+		  <p>Java</p>
+		  <p>Unix</p>
+		</div>
+	
+    <br><br>
+	<button type="button" class="collapsible"><i class="fa fa-line-chart w3-text-light-green"></i> Visualization Tools <i class="fa fa-plus" style="font-size: 10px;"></i></button>
+		<div class="content"><br>
+		  <p>PowerBI</p>
+		  <p>Excel</p>
+		</div>
+	
+    <br><br>
+	<button type="button" class="collapsible"><i class="fa fa-cloud w3-text-light-green" ></i> Cloud Applications <i class="fa fa-plus" style="font-size: 10px;"></i></button>
+		<div class="content"><br>
+		  <p>DataBricks</p>
+		  <p>Snowflake</p>
+		  <p>AWS RedShift</p>
+		</div>
+	
+    <br><br>
+	<button type="button" class="collapsible"><i class="fa fa-suitcase w3-text-light-green"></i> Area of Expertise <i class="fa fa-plus" style="font-size: 10px;"></i></button>
+		<div class="content"><br>
+		  <p>Business Intelligence</p>
+		  <p>Data Integration</p>
+		  <p>Data Modeling</p>
+		  <p>Big Data</p>
+		  <p>Data Warehousing</p>
+		</div>
+	
+    <br>
+    
+
+<h3 class="w3-padding-16 w3-text-light-green">Achievements/Milestones</h3>
+	<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey ">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-light-green">2+</span><br>
+        Project Experience
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-light-green">2+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-light-green">1+</span><br>
+        Certifications
+      </div>
+	  <div class="w3-quarter w3-section">
+        <span class="w3-xlarge w3-text-light-green">1</span><br>
+        Engaged Organiztions
+      </div>
+
+    </div>
+
+
+    <div class="w3-row" style="width:50%!important">
+      <div class="w3-half w3-section">
+          <button class="w3-button w3-light-green w3-padding-large w3-section w3-button-border" onclick="downloadFile('pdf')">
+            <i class="fa fa-download"></i> Resume
+          </button>
+      </div>
+	  <div class="w3-half w3-section">
+          <button class="w3-button w3-light-green w3-padding-large w3-section w3-button-border" onclick="downloadFile('cv')">
+            <i class="fa fa-download"></i> CV
+          </button>
+      </div>
+      
+
+      </div>
+
+
+
+
+
+  
+
+  <!-- Contact Section -->
+  <h2 class="w3-text-light-green">Contact Me</h2>
+    <hr style="width:200px;border-top:1px solid #f1f1f1;" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Chennai, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +91 9710364521</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: manoj.p0954@mail.com</p>
+    </div><br>
+    <p>Let's Develop Together and Grow Together. Send me a message:</p>
+
+    <form action="https://www.linkedin.com/in/manoj-kumar-pandian-587984245/" target="blank">
+        <button class="w3-button w3-light-green w3-padding-large w3-button-border" type="submit">
+          <i class="fa fa-paper-plane"></i> LinkedIn
+        </button>
+		
+	</form>
+	<br>
+	<form method="post" action="mailto:manoj.p0954@gmail.com?subject=subject&message=message" target="blank">
+        <button class="w3-button w3-light-green w3-padding-large w3-button-border" type="submit">
+          <i class="fa fa-paper-plane"></i> Email
+        </button>
+		
+	</form>
+	
+	
+	
+      
+  <!-- End Contact Section -->
+  </div>
+
+ </div>
+
+    <!-- Footer -->
+  <footer class="w3-container w3-padding-8 w3-center w3-white theme-bg" style="background-color:#f1f1f1!important;padding:10px!important;">
+  
+   <a href="https://www.linkedin.com/in/manoj-kumar-pandian-587984245/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">This design template taken from <a href="https://www.w3schools.com/w3css/tryw3css_templates_dark_portfolio.htm" target="_blank" class="w3-hover-text-green">w3.css</a> & Modified as per our needs.</p>
+  <!-- End footer -->
+  </footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
 <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
 function downloadFile(ty) {
 	// Create a temporary anchor element
     var a = document.createElement('a');
@@ -56,5 +290,8 @@ else  if (ty=='cv'){
 }
 </script>
 
+
 </body>
+
+
 </html>
