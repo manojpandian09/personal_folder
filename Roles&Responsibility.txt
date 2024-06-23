@@ -1,0 +1,7 @@
+As an ETL Developer, I taking responsible for designing, developing, and maintaining ETL processes to support business operations and data management needs. I role is to involve automating data workflows, integrating various data sources, and ensuring data quality and accessibility. 
+
+I work with technologies such as SQL, SAP Data Services, Oracle DB, AWS Glue, Spark, and Python to create efficient data pipelines and automate manual tasks. I have the potential to develop algorithms for data matching, perform batch and streaming data processing, and implement robust ETL jobs adhering to ACID principles.
+
+Additionally, I also provide knowledge transfer sessions, communicate effectively across organizational levels, and participate in AI training to enhance data processing capabilities. 
+
+One of my key focus is to contribute to reducing operational costs, improving data analysis efficiency, and ensuring high customer satisfaction.
